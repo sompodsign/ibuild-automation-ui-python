@@ -1,0 +1,8 @@
+
+{
+  "settings": {
+    "environmentType": "qa",
+    "_": "*************** It's a comment ***************",
+    "__": "based on 'environmentType' TEST DATA will load"
+  }
+}

@@ -1,0 +1,13 @@
+/logs/
+venv/
+venv.zip
+venv.tar.gz
+venv.tar.bz2
+venv.tar.xz
+venv.tar.lzm
+
+.env
+.env.local
+.env.staging
+.env.production
+1

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="37fbd2e7-5d90-40e1-a2a2-944e940e8cd7" name="Changes" comment="Dog deletion api included">
+      <change afterPath="$PROJECT_DIR$/page_objects/login_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/ui_testcases/login_page_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/python_selenium_test_template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_selenium_test_template.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application_settings/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/application_settings/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application_settings/api_application_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/application_settings/api_application_settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application_settings/api_base_requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/application_settings/api_base_requests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application_settings/application_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/application_settings/application_settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/browser_utility/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/browser_utility/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/browser_utility/browser.py" beforeDir="false" afterPath="$PROJECT_DIR$/browser_utility/browser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/browser_utility/driver_command.py" beforeDir="false" afterPath="$PROJECT_DIR$/browser_utility/driver_command.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf_test/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf_test/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf_test/run_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf_test/run_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf_test/send_mail.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf_test/send_mail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf_test/write_to_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf_test/write_to_excel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_provider/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_provider/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_provider/api_test_data_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_provider/test_data_provider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/screenshot_extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/screenshot_extensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/webdriver_extended.py" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/webdriver_extended.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helper/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/helper/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helper/data_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/helper/data_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helper/data_writer.py" beforeDir="false" afterPath="$PROJECT_DIR$/helper/data_writer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helper/drag_and_drop.js" beforeDir="false" afterPath="$PROJECT_DIR$/helper/drag_and_drop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helper/driver_actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/helper/driver_actions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helper/driver_waits.py" beforeDir="false" afterPath="$PROJECT_DIR$/helper/driver_waits.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_objects/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_objects/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_objects/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_objects/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_objects/home_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_objects/home_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/driver_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/driver_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/page_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page_factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/api_test_data/game_api_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/api_test_data/game_api_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/api_test_data/login_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/api_test_data/login_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/dev_test_data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/dev_test_data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/prod_test_data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/prod_test_data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data/qa_test_data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/qa_test_data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/admin_sign_up/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/admin_sign_up/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/admin_sign_up/admin_sign_up_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/admin_sign_up/admin_sign_up_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/bet/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/bet/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/bet/test_betting.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/bet/test_betting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/delete_dog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/delete_dog/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/delete_dog/test_delete_dog.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/delete_dog/test_delete_dog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/gambler_sign_up/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/gambler_sign_up/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/gambler_sign_up/gambler_sign_up_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/gambler_sign_up/gambler_sign_up_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/list_dogs_of_race/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/list_dogs_of_race/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/list_dogs_of_race/test_list_dogs_of_race.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/list_dogs_of_race/test_list_dogs_of_race.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/list_race/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/list_race/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/list_race/test_list_race.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/list_race/test_list_race.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/login_test/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/login_test/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/login_test/login_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/login_test/login_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/match_result/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/match_result/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/match_result/test_match_result.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/match_result/test_match_result.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/next_match/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/next_match/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/next_match/test_next_match.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/next_match/test_next_match.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/player_sign_up/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/player_sign_up/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/player_sign_up/player_sign_up_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/player_sign_up/player_sign_up_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/save_dog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/save_dog/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/save_dog/test_dog_save.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/save_dog/test_dog_save.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/save_race/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/save_race/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/save_race/save_race_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/save_race/save_race_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/verify_email/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/verify_email/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/verify_email/verify_email_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/verify_email/verify_email_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/verify_otp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/verify_otp/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api_testcases/verify_otp/verify_otp_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_testcases/verify_otp/verify_otp_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/base_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/base_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ui_testcases/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ui_testcases/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ui_testcases/home_page_testcases/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ui_testcases/home_page_testcases/home_page_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ui_testcases/home_page_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/email_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/email_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/excel_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/excel_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/general_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/general_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/json_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/json_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/test_data_generate.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/test_data_generate.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="game_api" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="9738322b-f850-4a60-827e-e94ae590bcca" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="27BLWerhiD49zd1JG9UyPpKrt1e" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/ui_testcases" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/ui_testcases" />
+      <recent name="$PROJECT_DIR$/page_objects" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/ui_testcases" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for tests.ui_testcases.login_page_test.LoginPageTest">
+    <configuration name="Python tests for tests.api_testcases.next_match.test_next_match.TestNextMatch.test_next_match_delete" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python_selenium_test_template" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.api_testcases.next_match.test_next_match.TestNextMatch.test_next_match_delete&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.api_testcases.save_dog.test_dog_save.TestSaveDog.test_dog_delete" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python_selenium_test_template" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.api_testcases.save_dog.test_dog_save.TestSaveDog.test_dog_delete&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.ui_testcases.home_page_test.HomePageTest" type="tests" factoryName="Autodetect" nameIsGenerated="true">
+      <module name="python_selenium_test_template" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;-s&quot;" />
+      <option name="_new_target" value="&quot;tests.ui_testcases.home_page_test.HomePageTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.ui_testcases.login_page_test.LoginPageTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python_selenium_test_template" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;-s&quot;" />
+      <option name="_new_target" value="&quot;tests.ui_testcases.login_page_test.LoginPageTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.ui_testcases.login_page_test.LoginPageTest.test_01_login_functionality" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python_selenium_test_template" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;-s&quot;" />
+      <option name="_new_target" value="&quot;tests.ui_testcases.login_page_test.LoginPageTest.test_01_login_functionality&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.ui_testcases.login_page_test.LoginPageTest.test_02_login_functionality_invalid_email" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python_selenium_test_template" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;-s&quot;" />
+      <option name="_new_target" value="&quot;tests.ui_testcases.login_page_test.LoginPageTest.test_02_login_functionality_invalid_email&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python tests.Python tests for tests.ui_testcases.home_page_test.HomePageTest" />
+      <item itemvalue="Python tests.Python tests for tests.api_testcases.next_match.test_next_match.TestNextMatch.test_next_match_delete" />
+      <item itemvalue="Python tests.Python tests for tests.api_testcases.save_dog.test_dog_save.TestSaveDog.test_dog_delete" />
+      <item itemvalue="Python tests.Python tests for tests.ui_testcases.login_page_test.LoginPageTest.test_01_login_functionality" />
+      <item itemvalue="Python tests.Python tests for tests.ui_testcases.login_page_test.LoginPageTest.test_02_login_functionality_invalid_email" />
+      <item itemvalue="Python tests.Python tests for tests.ui_testcases.login_page_test.LoginPageTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for tests.ui_testcases.login_page_test.LoginPageTest" />
+        <item itemvalue="Python tests.Python tests for tests.ui_testcases.login_page_test.LoginPageTest.test_02_login_functionality_invalid_email" />
+        <item itemvalue="Python tests.Python tests for tests.ui_testcases.login_page_test.LoginPageTest.test_01_login_functionality" />
+        <item itemvalue="Python tests.Python tests for tests.api_testcases.save_dog.test_dog_save.TestSaveDog.test_dog_delete" />
+        <item itemvalue="Python tests.Python tests for tests.api_testcases.next_match.test_next_match.TestNextMatch.test_next_match_delete" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="37fbd2e7-5d90-40e1-a2a2-944e940e8cd7" name="Changes" comment="" />
+      <created>1648788566349</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648788566349</updated>
+      <workItem from="1648788567709" duration="16967000" />
+      <workItem from="1648816047860" duration="57000" />
+      <workItem from="1649052566570" duration="876000" />
+      <workItem from="1649091572973" duration="79000" />
+      <workItem from="1650302538300" duration="599000" />
+      <workItem from="1650342633581" duration="599000" />
+      <workItem from="1650344173278" duration="10507000" />
+    </task>
+    <task id="LOCAL-00001" summary="game api service automation complete.">
+      <created>1648799754323</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648799754323</updated>
+    </task>
+    <task id="LOCAL-00002" summary="game api service automation complete.">
+      <created>1648803399119</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648803399119</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Dog deletion api included">
+      <created>1648815669463</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648815669463</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="game api service automation complete." />
+    <MESSAGE value="Dog deletion api included" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dog deletion api included" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/api_testcases/list_dogs_of_race/test_list_dogs_of_race.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/api_testcases/match_result/test_match_result.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/api_testcases/match_result/test_match_result.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/api_testcases/verify_email/verify_email_test.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/excel_utils.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Python_selenium_test_template$.coverage" NAME=" Coverage Results" MODIFIED="1648815543013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/indybuild_automation$.coverage" NAME=" Coverage Results" MODIFIED="1650354283159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
