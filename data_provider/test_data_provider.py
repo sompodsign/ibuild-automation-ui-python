@@ -1,5 +1,6 @@
 import datetime
 import random
+import string
 
 import pytz
 from randomuser import RandomUser
@@ -19,7 +20,6 @@ class CustomTestDataProvider:
     auth_api = BaseApi("/auth/api/login")
 
     def get_user_token(self):
-
         response = self.auth_api.post_request(payload=self.get_user_sign_in_data())
         return response['response']['accessToken']
 
@@ -248,3 +248,11 @@ class CustomTestDataProvider:
     def get_random_time():
         time_now = datetime.datetime.now(tz=pytz.timezone("Asia/Dhaka"))
         return str(time_now + datetime.timedelta(days=3))
+
+    @staticmethod
+    def get_lorem_ipsum_text():
+        return "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+    @staticmethod
+    def random_sentence(length=300):
+        return " ".join(random.choice(string.ascii_lowercase) for _ in range(length))

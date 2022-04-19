@@ -1,6 +1,7 @@
 
 from selenium.webdriver.common.by import By
 
+from application_settings.application_settings import ApplicationSettings
 from data_provider.test_data_provider import CustomTestDataProvider
 from page_objects.base_page import BasePage
 from helper.driver_actions import DriverActions
@@ -11,6 +12,12 @@ logger = CustomLogger("login_page_log").get_logger()
 
 
 class LoginPage(BasePage, DriverActions, DriverWaits, CustomTestDataProvider):
+
+    application_settings = ApplicationSettings()
+
+    data = application_settings.get_test_data_from_excel("login", "login_data")
+    email, password = data
+
     LOGIN_LINK = (By.XPATH, "//a[normalize-space()='LogIn']")
     EMAIL_FIELD = (By.XPATH, "//input[@placeholder='YOUR EMAIL *']")
     PASSWORD_FIELD = (By.XPATH, "//input[@id='password']")
@@ -48,7 +55,7 @@ class LoginPage(BasePage, DriverActions, DriverWaits, CustomTestDataProvider):
             logger.error("Message link not found with exception: ", e)
             raise AssertionError
 
-    def login(self, email, password):
+    def login(self, email=email, password=password):
         try:
             step = 0
 
