@@ -16,6 +16,8 @@ class TimeLinePage(BasePage, DriverActions, DriverWaits, CustomTestDataProvider)
     post_text_area = (By.XPATH, "//div[@id='create-post']//textarea[@id='comment']")
     image_upload_field = (By.XPATH, "//input[@id='imt-upld']")
     post_btn = (By.XPATH, "//button[normalize-space()='Post']")
+    upload_btn = (By.XPATH, "//button[normalize-space()='Upload']")
+    few_seconds_ago = (By.XPATH, "//*[contains(text(),'a few seconds ago')]")
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -24,8 +26,20 @@ class TimeLinePage(BasePage, DriverActions, DriverWaits, CustomTestDataProvider)
     def type_text_on_field(self, text):
         self.type_text(self.post_text_area, text)
 
+    def click_upload_btn(self):
+        try:
+            self.wait_until_visible(self.upload_btn, 10)
+            time.sleep(6)
+            self.click_on_web_element_with_actions_class(self.upload_btn)
+            return True
+        except Exception as e:
+            logger.error("Couldn't click on upload button: ", e)
+            raise AssertionError
+
     def click_post_button(self):
         try:
+            self.wait_until_visible(self.post_btn, 10)
+            time.sleep(5)
             self.click_on_web_element_with_actions_class(self.post_btn)
             return True
         except Exception as e:
@@ -34,6 +48,14 @@ class TimeLinePage(BasePage, DriverActions, DriverWaits, CustomTestDataProvider)
 
     def verify_post_text_on_timeline(self, text):
         self.wait_until_visible((By.XPATH, "//*[contains(text(), '" + text + "')]"))
+
+    def upload_image_on_timeline(self, image_name):
+        try:
+            self.upload_image(self.image_upload_field, image_name)
+            return True
+        except Exception as e:
+            logger.error("Couldn't upload image: ", e)
+            raise AssertionError
 
     def post_text_successfully(self):
 
@@ -64,33 +86,28 @@ class TimeLinePage(BasePage, DriverActions, DriverWaits, CustomTestDataProvider)
             logger.error("Couldn't post text: ", e)
             return False
 
-    # login with invalid credentials
-    def login_with_invalid_credentials_failed(self):
+    def post_image_successfully(self):
         try:
             step = 0
 
-            self.click_login_link()
+            self.login_page.login()
             step += 1
-            logger.info(str(step) + ": Clicked on login link")
+            logger.info(str(step) + ": Logged In")
 
-            self.type_email(self.get_new_email())
+            self.upload_image_on_timeline("test-image-1.jpg")
             step += 1
-            logger.info(str(step) + ": Typed email")
+            logger.info(str(step) + ": Uploaded image on timeline")
 
-            self.type_password(self.get_14_digit_hard_password())
+            self.click_upload_btn()
             step += 1
-            logger.info(str(step) + ": Typed password")
+            logger.info(str(step) + ": Clicked on upload button")
 
-            self.click_login_button()
+            self.click_post_button()
             step += 1
-            logger.info(str(step) + ": Clicked on login button")
+            logger.info(str(step) + ": Clicked on post button")
 
-            self.verify_invalid_credentials_msg()
-            step += 1
-            logger.info(str(step) + ": Login failed with invalid credentials")
-
-            return True
+            return self.wait_until_visible(self.few_seconds_ago, 10)
 
         except Exception as e:
-            logger.error("Login failed with exception: ", e)
+            logger.error("Couldn't post image: ", e)
             return False

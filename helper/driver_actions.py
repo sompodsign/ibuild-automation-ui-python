@@ -291,8 +291,8 @@ class DriverActions:
         except Exception as e:
             print(e)
 
-    @staticmethod
-    def upload_image(element, image_name):
+    # @staticmethod
+    def upload_image(self, element, image_name):
         """
         This method will take image name age process it to get it's absolute path and then send it to file input
         :param element:
@@ -300,8 +300,10 @@ class DriverActions:
         :return:
         """
         try:
-            file = os.path.abspath(image_name)
-            element.send_keys(file)
+            file = os.path.abspath("test_data/images/" + image_name)
+            el = self.find_element(*element)
+
+            el.send_keys(file)
             return True
         except Exception as e:
             print(e)
