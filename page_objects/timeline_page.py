@@ -13,6 +13,7 @@ logger = CustomLogger("login_page_log").get_logger()
 
 
 class TimeLinePage(BasePage, DriverActions, DriverWaits, CustomTestDataProvider):
+    # Start Locators
     post_text_area = (By.XPATH, "//div[@id='create-post']//textarea[@id='comment']")
     image_upload_field = (By.XPATH, "//input[@id='imt-upld']")
     post_btn = (By.XPATH, "//button[normalize-space()='Post']")
@@ -22,6 +23,18 @@ class TimeLinePage(BasePage, DriverActions, DriverWaits, CustomTestDataProvider)
     audio_upload_field = (By.XPATH, "//input[@id='sound']")
     search_input_field = (By.XPATH, "//input[@placeholder='Search IndyBuild']")
     search_result = (By.XPATH, "//*[contains(text(),'Unidevgo_qa')]")
+    upcoming_see_all_link = (By.XPATH, "//a[@class='right-side-links']")
+    #Events page
+    buy_tickets_btn = (By.XPATH, "//button[@type='button'][normalize-space()='Buy Tickets']")
+    events_page_header = (By.XPATH, "//h4[normalize-space()='Events That Match Your Interests.']")
+    purchase_tickets_header = (By.XPATH, "//h2[normalize-space()='Purchase Tickets']")
+    close_modal = (By.XPATH, "//img[@data-dismiss='modal']")
+    upcoming_events_details_btn_specific = (By.XPATH, "(//button[@type='button'][normalize-space()='Details'])[1]")
+    upcoming_events_details_btn = (By.XPATH, "//button[@type='button'][normalize-space()='Details']")
+    upcoming_events_header_on_timeline = (By.XPATH, "//*[contains(text(), 'Upcoming Events')]")
+    evnet_header_modal = (By.XPATH, "//h2[normalize-space()='Event']")
+
+    # End Locators
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -76,6 +89,20 @@ class TimeLinePage(BasePage, DriverActions, DriverWaits, CustomTestDataProvider)
         except Exception as e:
             logger.error("Couldn't upload audio: ", e)
             raise AssertionError
+
+    def upcoming_events_details_btn_check(self):
+        self.wait_until_visible(self.upcoming_events_details_btn_specific, 10)
+        try:
+            buttons = self.find_elements(*self.upcoming_events_details_btn)
+            for button in buttons:
+                button.click()
+                self.implicit_wait(2)
+                self.wait_until_visible(self.evnet_header_modal, 10)
+                self.click_on_web_element_with_actions_class(self.close_modal)
+            return True
+        except Exception as e:
+            logger.error("Couldn't click on upcoming events details button: ", e)
+            raise False
 
     def post_text_successfully(self):
 
@@ -199,3 +226,21 @@ class TimeLinePage(BasePage, DriverActions, DriverWaits, CustomTestDataProvider)
         except Exception as e:
             logger.error("Couldn't search user: ", e)
             return False
+
+    def check_upcoming_events_functionalities_on_timeline(self):
+        try:
+            step = 0
+            self.login_page.login()
+            step += 1
+            logger.info(str(step) + ": Logged In")
+
+            assert self.wait_until_visible(self.upcoming_events_header_on_timeline, 10)
+            step += 1
+            logger.info(str(step) + ": Upcoming events header is visible")
+
+            return self.upcoming_events_details_btn_check()
+
+        except Exception as e:
+            logger.error("Couldn't check upcoming events functionality on timeline: ", e)
+            return False
+

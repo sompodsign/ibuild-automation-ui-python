@@ -43,3 +43,11 @@ class TimeLinePageTest(BaseTest):
         timeline_page = TimeLinePage(self.driver)
         print("Starting to test search functionality")
         assert timeline_page.search_user_successfully() is True, "Searching failed"
+
+    @allure.title("Timeline Page - Sanity Test")
+    @allure.description("Checking if a user can seamlessly browse upcoming features")
+    def test_06_upcoming_events(self):
+        timeline_page = TimeLinePage(self.driver)
+        print("Starting to test Upcoming Events")
+        assert timeline_page.check_upcoming_events_functionalities_on_timeline() is True, "Something went wrong " \
+                                                                                          "on upcoming events"
