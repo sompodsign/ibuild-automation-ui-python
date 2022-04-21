@@ -36,3 +36,10 @@ class TimeLinePageTest(BaseTest):
         timeline_page = TimeLinePage(self.driver)
         print("Starting to test audio sharing functionality")
         assert timeline_page.post_audio_successfully() is True, "Audio posting failed"
+
+    @allure.title("Timeline Page - Sanity Test")
+    @allure.description("Checking if a user can search for another user on timeline")
+    def test_05_search_functionality(self):
+        timeline_page = TimeLinePage(self.driver)
+        print("Starting to test search functionality")
+        assert timeline_page.search_user_successfully() is True, "Searching failed"

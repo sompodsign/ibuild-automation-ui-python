@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37fbd2e7-5d90-40e1-a2a2-944e940e8cd7" name="Changes" comment="image upload automated testcase">
+    <list default="true" id="37fbd2e7-5d90-40e1-a2a2-944e940e8cd7" name="Changes" comment="video, audio sharing case complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helper/driver_actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/helper/driver_actions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page_objects/timeline_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_objects/timeline_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/ui_testcases/timeline_page_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ui_testcases/timeline_page_test.py" afterDir="false" />
     </list>
@@ -64,7 +63,7 @@
       <recent name="$PROJECT_DIR$/tests/ui_testcases" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_04_post_audio_successfully">
+  <component name="RunManager" selected="Python tests.pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_05_search_functionality">
     <configuration name="Python tests for tests.ui_testcases.home_page_test.HomePageTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="indybuild-test-automation" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,12 +130,12 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for timeline_page_test.TimeLinePageTest.test_01_post_text_successfully" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_05_search_functionality" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="indybuild-test-automation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/ui_testcases" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -144,24 +143,24 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;timeline_page_test.TimeLinePageTest.test_01_post_text_successfully&quot;" />
+      <option name="_new_target" value="&quot;tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_05_search_functionality&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python tests.Python tests for tests.ui_testcases.home_page_test.HomePageTest" />
-      <item itemvalue="Python tests.pytest for timeline_page_test.TimeLinePageTest.test_01_post_text_successfully" />
       <item itemvalue="Python tests.pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_02_post_image_successfully" />
       <item itemvalue="Python tests.pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_03_post_video_successfully" />
       <item itemvalue="Python tests.pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_04_post_audio_successfully" />
+      <item itemvalue="Python tests.pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_05_search_functionality" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_05_search_functionality" />
         <item itemvalue="Python tests.pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_04_post_audio_successfully" />
         <item itemvalue="Python tests.pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_03_post_video_successfully" />
         <item itemvalue="Python tests.pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_02_post_image_successfully" />
         <item itemvalue="Python tests.Python tests for tests.ui_testcases.home_page_test.HomePageTest" />
-        <item itemvalue="Python tests.pytest for timeline_page_test.TimeLinePageTest.test_01_post_text_successfully" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +182,7 @@
       <workItem from="1650429506051" duration="435000" />
       <workItem from="1650434251552" duration="4571000" />
       <workItem from="1650439265431" duration="2460000" />
-      <workItem from="1650516843002" duration="1309000" />
+      <workItem from="1650516843002" duration="2293000" />
     </task>
     <task id="LOCAL-00001" summary="game api service automation complete.">
       <created>1648799754323</created>
@@ -213,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650439883039</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="video, audio sharing case complete">
+      <created>1650518189557</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1650518189557</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +243,8 @@
     <MESSAGE value="game api service automation complete." />
     <MESSAGE value="Dog deletion api included" />
     <MESSAGE value="image upload automated testcase" />
-    <option name="LAST_COMMIT_MESSAGE" value="image upload automated testcase" />
+    <MESSAGE value="video, audio sharing case complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="video, audio sharing case complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -267,11 +274,12 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Python_selenium_test_template$.coverage" NAME=" Coverage Results" MODIFIED="1648815543013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_tests_ui_testcases_timeline_page_test_TimeLinePageTest_test_04_post_audio_successfully.coverage" NAME="pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_04_post_audio_successfully Coverage Results" MODIFIED="1650517866486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_tests_ui_testcases_timeline_page_test_TimeLinePageTest_test_04_post_audio_successfully.coverage" NAME="pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_04_post_audio_successfully Coverage Results" MODIFIED="1650518152475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_login_page_test_LoginPageTest_test_01_login_functionality.coverage" NAME="pytest for login_page_test.LoginPageTest.test_01_login_functionality Coverage Results" MODIFIED="1650429551356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/ui_testcases" />
     <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_login_page_test_LoginPageTest.coverage" NAME="pytest for login_page_test.LoginPageTest Coverage Results" MODIFIED="1650429586737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/ui_testcases" />
     <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_tests_ui_testcases_timeline_page_test_TimeLinePageTest_test_02_post_image_successfully.coverage" NAME="pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_02_post_image_successfully Coverage Results" MODIFIED="1650439838322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/indybuild_automation$.coverage" NAME=" Coverage Results" MODIFIED="1650360363860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_tests_ui_testcases_timeline_page_test_TimeLinePageTest_test_05_search_functionality.coverage" NAME="pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_05_search_functionality Coverage Results" MODIFIED="1650518982992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_tests_ui_testcases_timeline_page_test_TimeLinePageTest_test_03_post_video_successfully.coverage" NAME="pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_03_post_video_successfully Coverage Results" MODIFIED="1650517424995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_timeline_page_test_TimeLinePageTest_test_01_post_text_successfully.coverage" NAME="pytest for timeline_page_test.TimeLinePageTest.test_01_post_text_successfully Coverage Results" MODIFIED="1650429597717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/ui_testcases" />
   </component>

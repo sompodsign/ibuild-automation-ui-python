@@ -20,6 +20,8 @@ class TimeLinePage(BasePage, DriverActions, DriverWaits, CustomTestDataProvider)
     few_seconds_ago = (By.XPATH, "//*[contains(text(),'a few seconds ago')]")
     video_upload_field = (By.XPATH, "//input[@id='attahcment']")
     audio_upload_field = (By.XPATH, "//input[@id='sound']")
+    search_input_field = (By.XPATH, "//input[@placeholder='Search IndyBuild']")
+    search_result = (By.XPATH, "//*[contains(text(),'Unidevgo_qa')]")
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -172,4 +174,28 @@ class TimeLinePage(BasePage, DriverActions, DriverWaits, CustomTestDataProvider)
 
         except Exception as e:
             logger.error("Couldn't post audio: ", e)
+            return False
+
+    def search_user_successfully(self):
+        try:
+            step = 0
+
+            self.login_page.login()
+            step += 1
+            logger.info(str(step) + ": Logged In")
+
+            self.type_text(self.search_input_field, "unidev")
+            step += 1
+            logger.info(str(step) + ": Searched user on timeline")
+
+            self.wait_until_visible(self.search_result, 10)
+
+            self.click_on_web_element_with_actions_class(self.search_result)
+            step += 1
+            logger.info(str(step) + ": Clicked on search result")
+
+            return "profile" in self.get_page_url()
+
+        except Exception as e:
+            logger.error("Couldn't search user: ", e)
             return False
