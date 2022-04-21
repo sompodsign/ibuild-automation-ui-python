@@ -5,7 +5,6 @@ from application_settings.application_settings import ApplicationSettings
 
 
 class TimeLinePageTest(BaseTest):
-
     application_settings = ApplicationSettings()
     data = application_settings.get_test_data_from_excel("login", "login_data")
 
@@ -51,3 +50,11 @@ class TimeLinePageTest(BaseTest):
         print("Starting to test Upcoming Events")
         assert timeline_page.check_upcoming_events_functionalities_on_timeline() is True, "Something went wrong " \
                                                                                           "on upcoming events"
+
+    @allure.title("Timeline Page - Sanity Test")
+    @allure.description("Checking if a user can seamlessly browse build connection")
+    def test_07_build_connection_features(self):
+        timeline_page = TimeLinePage(self.driver)
+        print("Starting to test Build Connections")
+        assert timeline_page.check_build_connections_on_timeline() is True, "Something went wrong " \
+                                                                            "on Build connections"

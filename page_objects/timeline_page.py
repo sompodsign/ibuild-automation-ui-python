@@ -33,6 +33,13 @@ class TimeLinePage(BasePage, DriverActions, DriverWaits, CustomTestDataProvider)
     upcoming_events_details_btn = (By.XPATH, "//button[@type='button'][normalize-space()='Details']")
     upcoming_events_header_on_timeline = (By.XPATH, "//*[contains(text(), 'Upcoming Events')]")
     evnet_header_modal = (By.XPATH, "//h2[normalize-space()='Event']")
+    # Build connections
+    build_connections_header = (By.XPATH, "//h4[contains(.,'Build Connections')]")
+    connect_link = (By.XPATH, "//h4[contains(.,'Build Connections')]//a")
+    community_header = (By.XPATH, "//*[.='Build your community now!']")
+    invite_google_contacts = (By.XPATH, "//a[normalize-space()='Invite Google Contacts']")
+    invite_what_app_contacts = (By.XPATH, "//a[normalize-space()='Invite Whatsapp Contacts']")
+    back_btn_on_community = (By.XPATH, "//button[@id='nextBtn']")
 
     # End Locators
 
@@ -243,4 +250,43 @@ class TimeLinePage(BasePage, DriverActions, DriverWaits, CustomTestDataProvider)
         except Exception as e:
             logger.error("Couldn't check upcoming events functionality on timeline: ", e)
             return False
+
+    def check_build_connections_on_timeline(self):
+        try:
+            step = 0
+            self.login_page.login()
+            step += 1
+            logger.info(str(step) + ": Logged In")
+
+            assert self.wait_until_visible(self.build_connections_header, 10)
+            step += 1
+            logger.info(str(step) + ": Build connections header is visible on timeline")
+
+            self.wait_until_visible(self.connect_link, 10)
+            assert self.click_on_web_element_with_actions_class(self.connect_link) is True
+            step += 1
+            logger.info(str(step) + ": Clicked on connect link")
+
+            self.wait_until_visible(self.community_header, 10)
+            step += 1
+            logger.info(str(step) + ": Community header is visible on connect page")
+
+            self.wait_until_visible(self.invite_google_contacts, 10)
+            step += 1
+            logger.info(str(step) + ": Invite google contacts button is visible on connect page")
+
+            self.wait_until_visible(self.invite_what_app_contacts, 10)
+            step += 1
+            logger.info(str(step) + ": Invite what app contacts button is visible on connect page")
+
+            self.click_on_web_element_with_actions_class(self.back_btn_on_community)
+            step += 1
+            logger.info(str(step) + ": Clicked on back button on community page")
+
+            return self.wait_until_visible(self.post_text_area, 10)
+
+        except Exception as e:
+            logger.error("Couldn't check build connections on timeline: ", e)
+            return False
+
 
