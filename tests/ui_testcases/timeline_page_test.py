@@ -58,3 +58,11 @@ class TimeLinePageTest(BaseTest):
         print("Starting to test Build Connections")
         assert timeline_page.check_build_connections_on_timeline() is True, "Something went wrong " \
                                                                             "on Build connections"
+
+    @allure.title("Timeline Page - Sanity Test")
+    @allure.description("Checking if a user can browse left sidebar links seamlessly")
+    def test_08_left_sidebar_navigation(self):
+        timeline_page = TimeLinePage(self.driver)
+        print("Starting to left sidebar navigation")
+        assert timeline_page.check_left_sidebar_navigation() is True, "Something went wrong " \
+                                                                      "on left sidebar navigation"

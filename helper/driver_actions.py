@@ -15,6 +15,9 @@ class DriverActions:
     def __init__(self, driver):
         self.driver = driver
 
+    def go_to(self, url):
+        self.driver.get(url)
+
     def get_wait(self, wait=10):
         return WebDriverWait(self.driver, wait, poll_frequency=1,
                              ignored_exceptions=[ElementNotVisibleException, ElementNotSelectableException,

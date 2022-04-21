@@ -24,7 +24,7 @@ class TimeLinePage(BasePage, DriverActions, DriverWaits, CustomTestDataProvider)
     search_input_field = (By.XPATH, "//input[@placeholder='Search IndyBuild']")
     search_result = (By.XPATH, "//*[contains(text(),'Unidevgo_qa')]")
     upcoming_see_all_link = (By.XPATH, "//a[@class='right-side-links']")
-    #Events page
+    # Events page
     buy_tickets_btn = (By.XPATH, "//button[@type='button'][normalize-space()='Buy Tickets']")
     events_page_header = (By.XPATH, "//h4[normalize-space()='Events That Match Your Interests.']")
     purchase_tickets_header = (By.XPATH, "//h2[normalize-space()='Purchase Tickets']")
@@ -41,11 +41,28 @@ class TimeLinePage(BasePage, DriverActions, DriverWaits, CustomTestDataProvider)
     invite_what_app_contacts = (By.XPATH, "//a[normalize-space()='Invite Whatsapp Contacts']")
     back_btn_on_community = (By.XPATH, "//button[@id='nextBtn']")
 
+    # Left sidebar
+    artist_link = (By.XPATH, "//div[@class='post-profile pro-user-section']//app-profile-image-widget")
+    earnings_link = (By.XPATH, "//span[normalize-space()='EARNINGS']")
+    my_activity_header = (By.XPATH, "//h3[normalize-space()='My Activity']")
+    messages_link = (By.XPATH, "//div[contains(text(),'Messages')]")
+    message_search_field = (By.XPATH, "//input[@placeholder='People, Professionals, Messages']")
+    interests_link = (By.XPATH, "//div[contains(text(),'Interests')]")
+    my_library_link = (By.XPATH, "//div[contains(text(),'My Library')]")
+    my_store_link = (By.XPATH, "//div[contains(text(),'My Store')]")
+    welcome_store_msg = (By.XPATH, "//p[.='Welcome to Your Store']")
+    my_events_link = (By.XPATH, "//div[contains(text(),'My Events')]")
+    dashboard_link = (By.XPATH, "//div[contains(text(),'Dashboard')]")
+
     # End Locators
 
     def __init__(self, driver):
         super().__init__(driver)
         self.login_page = LoginPage(self.driver)
+
+    def back_to_time_line(self):
+        self.go_to("http://indybuildpro.com/talent/home")
+        time.sleep(5)
 
     def type_text_on_field(self, text):
         self.type_text(self.post_text_area, text)
@@ -110,6 +127,11 @@ class TimeLinePage(BasePage, DriverActions, DriverWaits, CustomTestDataProvider)
         except Exception as e:
             logger.error("Couldn't click on upcoming events details button: ", e)
             raise False
+
+    def click_artists_link(self):
+        time.sleep(5)
+        self.click_on_web_element_with_actions_class(self.artist_link)  # click on artist link
+        assert "profile" in self.get_page_url()
 
     def post_text_successfully(self):
 
@@ -289,4 +311,71 @@ class TimeLinePage(BasePage, DriverActions, DriverWaits, CustomTestDataProvider)
             logger.error("Couldn't check build connections on timeline: ", e)
             return False
 
+    def check_left_sidebar_navigation(self):
+        try:
+            step = 0
 
+            self.login_page.login()
+            step += 1
+            logger.info(str(step) + ": Logged In")
+
+            # self.wait_until_visible(self.artist_link, 10)
+            # time.sleep(5)
+            # self.click_on_web_element_with_actions_class(self.artist_link)
+            # self.wait_until_visible((By.XPATH, "//div[@class='artist-name']"), 10)
+            #
+
+            self.click_artists_link()
+            step += 1
+            logger.info(str(step) + ": Clicked on artists link")
+            self.back_to_time_line()
+
+            self.click_on_web_element_with_actions_class(self.earnings_link)
+            assert self.wait_until_visible(self.my_activity_header, 10) is True
+            self.back_to_time_line()
+            step += 1
+            logger.info(str(step) + ": Clicked on earnings link and activity header is visible")
+
+            self.click_on_web_element_with_actions_class(self.messages_link)
+            assert self.wait_until_visible(self.message_search_field, 10) is True
+            step += 1
+            logger.info(str(step) + ": Clicked on messages link and message search field is visible")
+            self.back_to_time_line()
+
+            self.click_on_web_element_with_actions_class(self.interests_link)
+            assert "interest" in self.get_page_url()
+            self.back_to_time_line()
+            step += 1
+            logger.info(str(step) + ": Clicked on interests link and interests page is opened")
+
+            self.click_on_web_element_with_actions_class(self.my_library_link)
+            time.sleep(2)
+            assert "library" in self.get_page_url()
+            step += 1
+            logger.info(str(step) + ": Clicked on my library link and library page is opened")
+            self.back_to_time_line()
+
+            self.click_on_web_element_with_actions_class(self.my_store_link)
+            assert self.wait_until_visible(self.welcome_store_msg, 10) is True
+            step += 1
+            logger.info(str(step) + ": Clicked on my store link and welcome store message is visible")
+            self.back_to_time_line()
+
+            self.click_on_web_element_with_actions_class(self.my_events_link)
+            time.sleep(2)
+            assert "myevents" in self.get_page_url()
+            step += 1
+            logger.info(str(step) + ": Clicked on my events link and my events page is opened")
+            self.back_to_time_line()
+
+            self.click_on_web_element_with_actions_class(self.dashboard_link)
+            assert self.wait_until_visible(self.my_activity_header, 10) is True
+            step += 1
+            logger.info(str(step) + ": Clicked on dashboard link and activity header is visible")
+            self.back_to_time_line()
+
+            return True
+
+        except Exception as e:
+            logger.error("Couldn't check left sidebar navigation: ", e)
+            return False
