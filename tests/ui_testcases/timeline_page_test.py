@@ -22,3 +22,17 @@ class TimeLinePageTest(BaseTest):
         timeline_page = TimeLinePage(self.driver)
         print("Starting to test image posting functionality")
         assert timeline_page.post_image_successfully() is True, "image posting failed"
+
+    @allure.title("Timeline Page - Sanity Test")
+    @allure.description("Checking if a user can post video on timeline")
+    def test_03_post_video_successfully(self):
+        timeline_page = TimeLinePage(self.driver)
+        print("Starting to test video sharing functionality")
+        assert timeline_page.post_video_successfully() is True, "Video posting failed"
+
+    @allure.title("Timeline Page - Sanity Test")
+    @allure.description("Checking if a user can post audio on timeline")
+    def test_04_post_audio_successfully(self):
+        timeline_page = TimeLinePage(self.driver)
+        print("Starting to test audio sharing functionality")
+        assert timeline_page.post_audio_successfully() is True, "Audio posting failed"

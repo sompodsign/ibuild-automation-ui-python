@@ -18,6 +18,8 @@ class TimeLinePage(BasePage, DriverActions, DriverWaits, CustomTestDataProvider)
     post_btn = (By.XPATH, "//button[normalize-space()='Post']")
     upload_btn = (By.XPATH, "//button[normalize-space()='Upload']")
     few_seconds_ago = (By.XPATH, "//*[contains(text(),'a few seconds ago')]")
+    video_upload_field = (By.XPATH, "//input[@id='attahcment']")
+    audio_upload_field = (By.XPATH, "//input[@id='sound']")
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -55,6 +57,22 @@ class TimeLinePage(BasePage, DriverActions, DriverWaits, CustomTestDataProvider)
             return True
         except Exception as e:
             logger.error("Couldn't upload image: ", e)
+            raise AssertionError
+
+    def upload_video_on_timeline(self, video_file_name):
+        try:
+            self.upload_video(self.video_upload_field, video_file_name)
+            return True
+        except Exception as e:
+            logger.error("Couldn't upload video: ", e)
+            raise AssertionError
+
+    def upload_audio_on_timeline(self, audio_file_name):
+        try:
+            self.upload_audio(self.audio_upload_field, audio_file_name)
+            return True
+        except Exception as e:
+            logger.error("Couldn't upload audio: ", e)
             raise AssertionError
 
     def post_text_successfully(self):
@@ -110,4 +128,48 @@ class TimeLinePage(BasePage, DriverActions, DriverWaits, CustomTestDataProvider)
 
         except Exception as e:
             logger.error("Couldn't post image: ", e)
+            return False
+
+    def post_video_successfully(self):
+        try:
+            step = 0
+
+            self.login_page.login()
+            step += 1
+            logger.info(str(step) + ": Logged In")
+
+            self.upload_video_on_timeline("test-video-1.mp4")
+            step += 1
+            logger.info(str(step) + ": Uploaded video on timeline")
+
+            self.click_post_button()
+            step += 1
+            logger.info(str(step) + ": Clicked on post button")
+
+            return self.wait_until_visible(self.few_seconds_ago, 10)
+
+        except Exception as e:
+            logger.error("Couldn't post image: ", e)
+            return False
+
+    def post_audio_successfully(self):
+        try:
+            step = 0
+
+            self.login_page.login()
+            step += 1
+            logger.info(str(step) + ": Logged In")
+
+            self.upload_audio_on_timeline("test-audio-1.mp3")
+            step += 1
+            logger.info(str(step) + ": Uploaded audio on timeline")
+
+            self.click_post_button()
+            step += 1
+            logger.info(str(step) + ": Clicked on post button")
+
+            return self.wait_until_visible(self.few_seconds_ago, 10)
+
+        except Exception as e:
+            logger.error("Couldn't post audio: ", e)
             return False

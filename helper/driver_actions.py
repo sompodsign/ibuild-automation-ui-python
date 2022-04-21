@@ -308,6 +308,38 @@ class DriverActions:
         except Exception as e:
             print(e)
 
+    def upload_video(self, element, video_name):
+        """
+        This method will take image name age process it to get it's absolute path and then send it to file input
+        :param element:
+        :param image_name:
+        :return:
+        """
+        try:
+            file = os.path.abspath("test_data/videos/" + video_name)
+            el = self.find_element(*element)
+
+            el.send_keys(file)
+            return True
+        except Exception as e:
+            print(e)
+
+    def upload_audio(self, element, audio_name):
+        """
+        This method will take image name age process it to get its absolute path and then send it to file input
+        :param element:
+        :param audio_name:
+        :return:
+        """
+        try:
+            file = os.path.abspath("test_data/audios/" + audio_name)    # audio file
+            el = self.find_element(*element)
+
+            el.send_keys(file)
+            return True
+        except Exception as e:
+            print(e)
+
     def click_on_web_element_using_javascript(self, element):
         try:
             self.driver.execute_script("arguments[0].click();", element)
