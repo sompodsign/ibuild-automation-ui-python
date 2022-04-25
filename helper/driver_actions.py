@@ -46,7 +46,9 @@ class DriverActions:
         assert self.scroll_to_web_element_with_javascript(element) is True, "Unable to scroll to element"
         try:
             actions.move_to_element(self.get_wait(2)
-                                    .until(EC.element_to_be_clickable(element))).click().perform()
+                                    .until(EC.element_to_be_clickable(element)))
+            el = self.find_element(*element)
+            actions.click(el).perform()
             if self.accept_browser_alert():
                 print("Alert is present.")
             else:

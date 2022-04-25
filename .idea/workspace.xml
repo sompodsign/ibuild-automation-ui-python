@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37fbd2e7-5d90-40e1-a2a2-944e940e8cd7" name="Changes" comment="build connection on timeline completed">
+    <list default="true" id="37fbd2e7-5d90-40e1-a2a2-944e940e8cd7" name="Changes" comment="left sidebar navigation autoamted.">
+      <change afterPath="$PROJECT_DIR$/page_objects/market_place_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/ui_testcases/market_place_page_tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/helper/driver_actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/helper/driver_actions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_objects/timeline_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_objects/timeline_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/ui_testcases/timeline_page_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ui_testcases/timeline_page_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +35,6 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="9738322b-f850-4a60-827e-e94ae590bcca" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -47,25 +44,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/shampad/Desktop/Projects/indybuild-test-automation/tests/ui_testcases&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/page_objects" />
       <recent name="$PROJECT_DIR$/tests/ui_testcases" />
+      <recent name="$PROJECT_DIR$/page_objects" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests/ui_testcases" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_08_left_sidebar_navigation">
-    <configuration name="pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_04_post_audio_successfully" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for tests.ui_testcases.market_place_page_tests.MarketPlacePageTest.test_02_detail_check_for_a_item">
+    <configuration name="pytest for tests.ui_testcases.login_page_test.LoginPageTest.test_01_login_functionality" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="indybuild-test-automation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -78,11 +74,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_04_post_audio_successfully&quot;" />
+      <option name="_new_target" value="&quot;tests.ui_testcases.login_page_test.LoginPageTest.test_01_login_functionality&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_05_search_functionality" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for tests.ui_testcases.market_place_page_tests.MarketPlacePageTest.test_01_marketplace_view_all_links_check" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="indybuild-test-automation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,12 +90,12 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_05_search_functionality&quot;" />
+      <option name="_new_additionalArguments" value="&quot;-s&quot;" />
+      <option name="_new_target" value="&quot;tests.ui_testcases.market_place_page_tests.MarketPlacePageTest.test_01_marketplace_view_all_links_check&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_06_upcoming_events" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for tests.ui_testcases.market_place_page_tests.MarketPlacePageTest.test_02_detail_check_for_a_item" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="indybuild-test-automation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -111,8 +107,8 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_06_upcoming_events&quot;" />
+      <option name="_new_additionalArguments" value="&quot;-s&quot;" />
+      <option name="_new_target" value="&quot;tests.ui_testcases.market_place_page_tests.MarketPlacePageTest.test_02_detail_check_for_a_item&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -151,19 +147,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_04_post_audio_successfully" />
-      <item itemvalue="Python tests.pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_05_search_functionality" />
-      <item itemvalue="Python tests.pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_06_upcoming_events" />
+      <item itemvalue="Python tests.pytest for tests.ui_testcases.market_place_page_tests.MarketPlacePageTest.test_02_detail_check_for_a_item" />
+      <item itemvalue="Python tests.pytest for tests.ui_testcases.login_page_test.LoginPageTest.test_01_login_functionality" />
+      <item itemvalue="Python tests.pytest for tests.ui_testcases.market_place_page_tests.MarketPlacePageTest.test_01_marketplace_view_all_links_check" />
       <item itemvalue="Python tests.pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_07_build_connection_features" />
       <item itemvalue="Python tests.pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_08_left_sidebar_navigation" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for tests.ui_testcases.market_place_page_tests.MarketPlacePageTest.test_02_detail_check_for_a_item" />
+        <item itemvalue="Python tests.pytest for tests.ui_testcases.market_place_page_tests.MarketPlacePageTest.test_01_marketplace_view_all_links_check" />
+        <item itemvalue="Python tests.pytest for tests.ui_testcases.login_page_test.LoginPageTest.test_01_login_functionality" />
         <item itemvalue="Python tests.pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_08_left_sidebar_navigation" />
         <item itemvalue="Python tests.pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_07_build_connection_features" />
-        <item itemvalue="Python tests.pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_06_upcoming_events" />
-        <item itemvalue="Python tests.pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_05_search_functionality" />
-        <item itemvalue="Python tests.pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_04_post_audio_successfully" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +181,10 @@
       <workItem from="1650429506051" duration="435000" />
       <workItem from="1650434251552" duration="4571000" />
       <workItem from="1650439265431" duration="2460000" />
-      <workItem from="1650516843002" duration="9244000" />
+      <workItem from="1650516843002" duration="9955000" />
+      <workItem from="1650742130765" duration="22000" />
+      <workItem from="1650863703901" duration="3968000" />
+      <workItem from="1650867699686" duration="6538000" />
     </task>
     <task id="LOCAL-00001" summary="game api service automation complete.">
       <created>1648799754323</created>
@@ -243,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650523791792</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="left sidebar navigation autoamted.">
+      <created>1650526182478</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1650526182478</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +277,8 @@
     <MESSAGE value="user search functionality from timeline" />
     <MESSAGE value="featured events automated" />
     <MESSAGE value="build connection on timeline completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="build connection on timeline completed" />
+    <MESSAGE value="left sidebar navigation autoamted." />
+    <option name="LAST_COMMIT_MESSAGE" value="left sidebar navigation autoamted." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -296,21 +303,29 @@
           <line>26</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/page_objects/market_place_page.py</url>
+          <line>96</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_tests_ui_testcases_market_place_page_tests_MarketPlacePageTest_test_02_detail_check_for_a_item.coverage" NAME="pytest for tests.ui_testcases.market_place_page_tests.MarketPlacePageTest.test_02_detail_check_for_a_item Coverage Results" MODIFIED="1650875201378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_tests_ui_testcases_timeline_page_test_TimeLinePageTest_test_07_build_connection_features.coverage" NAME="pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_07_build_connection_features Coverage Results" MODIFIED="1650523745253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/indybuild_automation$.coverage" NAME=" Coverage Results" MODIFIED="1650360363860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_selenium_test_template$.coverage" NAME=" Coverage Results" MODIFIED="1648815543013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_tests_ui_testcases_timeline_page_test_TimeLinePageTest_test_04_post_audio_successfully.coverage" NAME="pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_04_post_audio_successfully Coverage Results" MODIFIED="1650518152475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_tests_ui_testcases_timeline_page_test_TimeLinePageTest_test_07_build_connection_features.coverage" NAME="pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_07_build_connection_features Coverage Results" MODIFIED="1650523745253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_login_page_test_LoginPageTest_test_01_login_functionality.coverage" NAME="pytest for login_page_test.LoginPageTest.test_01_login_functionality Coverage Results" MODIFIED="1650429551356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/ui_testcases" />
     <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_login_page_test_LoginPageTest.coverage" NAME="pytest for login_page_test.LoginPageTest Coverage Results" MODIFIED="1650429586737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/ui_testcases" />
     <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_tests_ui_testcases_timeline_page_test_TimeLinePageTest_test_02_post_image_successfully.coverage" NAME="pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_02_post_image_successfully Coverage Results" MODIFIED="1650439838322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_tests_ui_testcases_timeline_page_test_TimeLinePageTest_test_06_upcoming_events.coverage" NAME="pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_06_upcoming_events Coverage Results" MODIFIED="1650522650871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/indybuild_automation$.coverage" NAME=" Coverage Results" MODIFIED="1650360363860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_login_page_test_LoginPageTest_test_01_login_functionality.coverage" NAME="pytest for login_page_test.LoginPageTest.test_01_login_functionality Coverage Results" MODIFIED="1650429551356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/ui_testcases" />
     <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_tests_ui_testcases_timeline_page_test_TimeLinePageTest_test_05_search_functionality.coverage" NAME="pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_05_search_functionality Coverage Results" MODIFIED="1650519140550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_tests_ui_testcases_timeline_page_test_TimeLinePageTest_test_08_left_sidebar_navigation.coverage" NAME="pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_08_left_sidebar_navigation Coverage Results" MODIFIED="1650526043322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_tests_ui_testcases_timeline_page_test_TimeLinePageTest_test_06_upcoming_events.coverage" NAME="pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_06_upcoming_events Coverage Results" MODIFIED="1650522650871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_tests_ui_testcases_timeline_page_test_TimeLinePageTest_test_08_left_sidebar_navigation.coverage" NAME="pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_08_left_sidebar_navigation Coverage Results" MODIFIED="1650526091116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_tests_ui_testcases_timeline_page_test_TimeLinePageTest_test_03_post_video_successfully.coverage" NAME="pytest for tests.ui_testcases.timeline_page_test.TimeLinePageTest.test_03_post_video_successfully Coverage Results" MODIFIED="1650517424995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_tests_ui_testcases_login_page_test_LoginPageTest_test_01_login_functionality.coverage" NAME="pytest for tests.ui_testcases.login_page_test.LoginPageTest.test_01_login_functionality Coverage Results" MODIFIED="1650863744750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_tests_ui_testcases_market_place_page_tests_MarketPlacePageTest_test_01_marketplace_view_all_links_check.coverage" NAME="pytest for tests.ui_testcases.market_place_page_tests.MarketPlacePageTest.test_01_marketplace_view_all_links_check Coverage Results" MODIFIED="1650872088729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/indybuild_test_automation$pytest_for_timeline_page_test_TimeLinePageTest_test_01_post_text_successfully.coverage" NAME="pytest for timeline_page_test.TimeLinePageTest.test_01_post_text_successfully Coverage Results" MODIFIED="1650429597717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/ui_testcases" />
   </component>
 </project>
